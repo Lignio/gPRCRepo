@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "github.com/Lignio/gPRCRepo.git/Proto";
+
+package Proto;
+
+
+service getCurrentTime {
+    rpc getTime (GetTimeRequest) returns (GetTimeReply) {}
+}
+
+message GetTimeRequest {}
+
+message GetTimeReply {
+    string reply = 1;
+}
+
+
